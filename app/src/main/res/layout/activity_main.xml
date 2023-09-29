@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Activity.MainActivity">
+
+    <com.google.android.material.appbar.MaterialToolbar
+        android:id="@+id/mtbar"
+        android:contentDescription="@string/app_name"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/bgColor"
+        app:title="News App"
+        app:titleTextColor="@color/white"
+        android:outlineProvider="none"
+        app:titleCentered="true"
+        app:navigationIcon="@drawable/baseline_arrow_back_ios_24">
+    </com.google.android.material.appbar.MaterialToolbar>
+
+    <com.google.android.material.tabs.TabLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:outlineProvider="none"
+        android:contentDescription="@string/app_name"
+        android:background="@color/bgColor"
+        app:tabTextColor="@color/white"
+        app:tabIndicatorColor="@color/white"
+        app:tabMode="scrollable"
+        app:tabIndicatorHeight="3.5dp"
+        android:layout_below="@+id/materialtoolbar1"
+        android:id="@+id/tablayout1">
+    </com.google.android.material.tabs.TabLayout>
+
+    <androidx.viewpager.widget.ViewPager
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:contentDescription="@string/app_name"
+        android:id="@+id/viewPager">
+    </androidx.viewpager.widget.ViewPager>
+
+</LinearLayout>
